@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
+import { IoPersonOutline } from "react-icons/io5";
+
 
 const Navbar = () => {
   return (
@@ -37,6 +40,10 @@ const Navbar = () => {
           <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-black group-hover:w-full transition-all duration-500"></span>
         </NavLink>
       </nav>
+      <div className="flex flex-row gap-5">
+        <CiSearch className="text-2xl"/>
+        <IoPersonOutline className="text-2xl"/>
+      </div>
     </div>
   );
 };
