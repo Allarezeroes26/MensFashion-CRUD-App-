@@ -23,9 +23,11 @@ const ShopContextProvider = ({children}) => {
 
     const currency = '₱';
     const delivery_fee = 60;
+    const [ search, setSearch ] = useState('');
+    const [ showSearch, setShowSearch ] = useState(true)
 
     const value = {
-        products, currency, delivery_fee
+        products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch
     }
 
     return (

@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10">
         <div>
-            <h1 className="mb-5 text-xl w-32 font-display">Menskit</h1>
+            <h1 className="mb-5 text-xl w-32 font-display">Allkit</h1>
             <p className='w-full md:w-2/3 text-gray-600 font-paragraph'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quam alias facilis, aliquam dolorum maiores quaerat, voluptate tenetur consequuntur exercitationem explicabo. Vel adipisci repudiandae molestiae asperiores ad dolorum eaque iure?</p>
         </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
         <div>
             <hr />
-            <p className='py-5 font-paragraph text-sm text-center'>Copyright 2025@ <span className='font-display font-bold'>menskit.com</span> - All Rights Reserved </p>
+            <p className='py-5 font-paragraph text-sm text-center'>Copyright 2025@ <span className='font-display font-bold'>allkit.com</span> - All Rights Reserved </p>
         </div>
     </div>
   )

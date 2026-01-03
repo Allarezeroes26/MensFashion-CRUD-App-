@@ -4,15 +4,17 @@ import { IoPersonOutline } from "react-icons/io5";
 import { CiShoppingCart } from "react-icons/ci";
 import { IoIosMenu } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ShopContext } from "../context/shopContext";
 
 const Navbar = () => {
 
   const [ visible, setVisible ] = useState(false)
+  const { setShowSearch } = useContext(ShopContext)
 
   return (
     <div className="flex items-center justify-between py-5">
-      <Link to="/"><h1 className="font-display text-2xl">Menskit</h1></Link>
+      <Link to="/"><h1 className="font-display text-2xl">AllKit</h1></Link>
       <nav className="hidden sm:flex items-center space-x-6">
         <NavLink
           to="/"
@@ -26,7 +28,7 @@ const Navbar = () => {
           to="/collection"
           className="relative group font-paragraph text-black"
         >
-          Collection
+          Products
           <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-black group-hover:w-full transition-all duration-500"></span>
         </NavLink>
 
@@ -47,7 +49,7 @@ const Navbar = () => {
         </NavLink>
       </nav>
       <div className="flex flex-row gap-5">
-        <CiSearch className="text-2x cursor-pointer w-5"/>
+        <CiSearch onClick={() => setShowSearch(true)} className="text-2x cursor-pointer w-5"/>
 
         <div className="group relative">
           <IoPersonOutline className="text-2x cursor-pointer w-5"/>

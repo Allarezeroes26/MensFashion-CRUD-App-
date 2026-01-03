@@ -12,18 +12,18 @@ const Hero = () => {
           <div className="flex items-center gap-3 mb-6">
             <span className="w-10 h-[3px] bg-black"></span>
             <p className="font-paragraph text-sm tracking-widest uppercase text-gray-600">
-              Menskit
+              AllKit
             </p>
           </div>
 
           {/* Title */}
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            All Things Men. <br /> One Place.
+            Everything You Need. <br /> One Store.
           </h1>
 
           {/* Subtitle */}
           <p className="font-paragraph text-gray-600 text-base sm:text-lg mb-8">
-            Discover fashion, gear, and everyday essentials curated for modern men.
+            Fashion, electronics, and everyday essentials.
           </p>
 
           {/* CTA Buttons */}
