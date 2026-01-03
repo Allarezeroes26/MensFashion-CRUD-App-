@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-5">
-      <h1 className="font-display text-2xl">Mens Fashion</h1>
+      <Link to="/"><h1 className="font-display text-2xl">Menskit</h1></Link>
       <nav className="hidden sm:flex items-center space-x-6">
         <NavLink
           to="/"

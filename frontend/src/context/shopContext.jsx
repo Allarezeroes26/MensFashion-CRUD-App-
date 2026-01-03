@@ -6,7 +6,7 @@ export const ShopContext = createContext();
 
 const ShopContextProvider = ({children}) => {
 
-    const [products, setProducts] = useState(null)
+    const [products, setProducts] = useState([])
 
     useEffect(() => {
         const fetchProducts = async () => {
