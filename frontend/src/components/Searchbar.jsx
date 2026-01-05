@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { ShopContext } from "../context/shopContext"
 import { CiSearch } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 const Searchbar = () => {

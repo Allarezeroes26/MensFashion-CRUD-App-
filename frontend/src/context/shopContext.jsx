@@ -1,6 +1,7 @@
 import { createContext, useEffect } from "react";
 import { useState } from 'react';
 import api from '../api/api'
+import { useParams } from "react-router-dom";
 
 export const ShopContext = createContext();
 
@@ -20,6 +21,7 @@ const ShopContextProvider = ({children}) => {
 
         fetchProducts()
     }, [])
+
 
     const currency = '₱';
     const delivery_fee = 60;

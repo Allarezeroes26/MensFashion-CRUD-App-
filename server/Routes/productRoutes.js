@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try {
-        const id = req.params
+        const {id} = req.params
         const response = await fetch(`https://fakestoreapi.com/products/${id}`)
         const data = await response.json()
         res.json(data)
